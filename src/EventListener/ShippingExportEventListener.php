@@ -25,7 +25,9 @@ final class ShippingExportEventListener
 {
     public const INPOST_SHIPPING_GATEWAY_CODE = 'inpost';
 
-    public const INPOST_POINT_SHIPPING_GATEWAY_CODE = 'inpost_point';
+    public const INPOST_COURIER_SHIPPING_METHOD_CODE_PREFIX = 'inpost_point';
+
+    public const INPOST_POINT_SHIPPING_METHOD_CODE_PREFIX = 'inpost_courier';
 
     private const ID_KEY = 'id';
 
