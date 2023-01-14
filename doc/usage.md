@@ -16,7 +16,7 @@ Select 'Shipping methods' from Sylius Admin Panel and add methods for Courier an
 
 **Important:**
 - field 'code' for service *Parcel Lockers* must be equal or starts with **inpost_point** e.g. 'inpost_point' or 'inpost_point_pre_paid'
-- field 'code' for service *Courier* must be equal or starts with **inpost_courier** e.g. 'inpost_courier' or 'inpost_courier_pay_on_delivery'
+- field 'code' for service *Courier* must be equal or starts with **inpost** e.g. 'inpost' or 'inpost_courier'
 
 Keep in mind that:
 - maximal parcel size and weight for *Parcel Locker* is: 41 x 38 x 64 cm and 25kg

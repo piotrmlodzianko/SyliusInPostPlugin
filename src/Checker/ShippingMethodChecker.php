@@ -24,10 +24,9 @@ final class ShippingMethodChecker implements ShippingMethodCheckerInterface
             }
 
             $shipmentCode = $shipment->getMethod()->getCode();
-            $isInPostPoint = str_starts_with($shipmentCode, ShippingExportEventListener::INPOST_POINT_SHIPPING_METHOD_CODE_PREFIX);
-            $isInPostCourier = str_starts_with($shipmentCode, ShippingExportEventListener::INPOST_COURIER_SHIPPING_METHOD_CODE_PREFIX);
+            $isInPost = str_starts_with($shipmentCode, ShippingExportEventListener::SHIPPING_METHOD_CODE_PREFIX);
 
-            return $isInPostPoint || $isInPostCourier;
+            return $isInPost;
         });
     }
 }
